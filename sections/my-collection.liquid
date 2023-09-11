@@ -2,11 +2,7 @@
 <section class="collection_section">
     <div class="container">
         <div class="row">
-            {%- assign collections = collections.long-sleeve.products.title -%}
-            <h2>{{ collections }}</h2>
-            {%- for product in collections[sections.settings.my_collection].products -%}
-
-            {%- endfor -%}
+            {%- for product in collections[section.settings.my_collection].products -%}
             <div class="col-12 col-md-4">
                 <div class="card">
                     <div class="head">
@@ -20,6 +16,7 @@
                     </div>
                 </div>
             </div>
+            {%- endfor -%}
         </div>
     </div>
 </section>
