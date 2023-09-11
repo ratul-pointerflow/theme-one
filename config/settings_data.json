@@ -141,10 +141,7 @@
       "6c96a44f-2ff0-42d6-9a3c-c93009f991ee": {
         "type": "my-collection",
         "settings": {
-          "title": "Example Heading",
-          "description": "<p>Example Description<\/p>",
-          "button_label": "Example button",
-          "button_url": ""
+          "title": "Example Heading"
         }
       }
     },
