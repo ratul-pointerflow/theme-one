@@ -110,17 +110,22 @@ a:hover {
 /* hero section */
 
 .hero_section{
-    background-color: aqua;
+    background-image: url('./hero.jpg');
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
     height: 40vh;
 }
 
 .hero_section .hero_content{
-  background-color: red;
   display: flex;
   height: 40vh;
-  justify-content: center;
-  align-items: center;
+  justify-content: flex-end;
+  align-items: flex-start;
   flex-direction: column;
+  padding: 40px 0px;
+  width: 100%;
+  max-width: 200px;
 }
 
 .hero_section .hero_content h1{
@@ -129,8 +134,10 @@ a:hover {
   color: #fff;
 }
 .hero_section .hero_content p{
-  font-size: 20;
+  font-size: 20px;
   color: #fff;
+  text-wrap: wrap;
+  width: 200px;
 }
 
 .hero_section .hero_content a{
