@@ -1,0 +1,55 @@
+<!--  section start -->
+<section class='_section'>
+    <div class='container'>
+        <div class='row'>
+            <h1>ZazBah</h1>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                Omnis dignissimos ullam, adipisci earum blanditiis illo
+                consequuntur reprehenderit eum reiciendis quibusdam nostrum
+                distinctio cupiditate veritatis sit laboriosam recusandae
+                voluptatem dolores accusantium.
+            </p>
+            <a href="/">Home</a>
+        </div>
+    </div>
+</section>
+<!--  section end   -->
+
+{% schema %}
+{
+"name": "hero",
+"class": "hero-section",
+"settings": [
+{
+"type": "text",
+"id": "title",
+"default": "Example Heading",
+"label": "heading title"
+},
+{
+"type": "richtext",
+"id": "description",
+"default": "<p>Example Description</p>",
+"label": "Description"
+},
+{
+"type": "text",
+"id": "button_label",
+"default": "Example button",
+"label": "Button Label"
+},
+{
+"type": "url",
+"id": "button_url",
+"label": "Button link"
+}
+],
+"presets": [
+{
+"category": "hero",
+"name": "simple hero"
+}
+]
+}
+{% endschema %}
