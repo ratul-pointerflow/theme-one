@@ -137,12 +137,6 @@
           "button_label": "shop",
           "button_url": "shopify:\/\/collections\/back-in-stock"
         }
-      },
-      "header": {
-        "type": "header",
-        "settings": {
-          "logo": "Ratul"
-        }
       }
     },
     "content_for_index": [
