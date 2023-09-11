@@ -111,4 +111,36 @@ a:hover {
 
 .hero_section{
     background-color: aqua;
+    height: 40vh;
+}
+
+.hero_section .hero_content{
+  background-color: red;
+  display: flex;
+  height: 40vh;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.hero_section .hero_content h1{
+  font-weight: 900;
+  font-size: 50px;
+  color: #fff;
+}
+.hero_section .hero_content p{
+  font-size: 20;
+  color: #fff;
+}
+
+.hero_section .hero_content a{
+  padding: 10px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: aqua;
+  color: #000;
+  font-size: 20px;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }

@@ -284,30 +284,9 @@
 <body
   class="gradient{% if settings.animations_hover_elements != 'none' %} animate--hover-{{ settings.animations_hover_elements }}{% endif %}">
 
-  {% comment %} <a class="skip-to-content-link button visually-hidden" href="#MainContent">
-    {{ 'accessibility.skip_to_text' | t }}
-  </a>
-
-  {%- if settings.cart_type == 'drawer' -%}
-  {%- render 'cart-drawer' -%}
-  {%- endif -%}
-
-  {% sections 'header-group' %} {% endcomment %}
-
   {{ content_for_header }}
-  <nav class="navbar">
-    <div class="container">
-      <a href="/" class="logo">Jazbah</a>
-      <span class="hamburger">
-        <i class='bx bx-menu'></i>
-      </span>
-      <ul class="nav_menu">
-        {%- for link in linklists.main-menu.links -%}
-        <li><a href="{{ link.url }}">{{ link.title }}</a></li>
-        {%- endfor -%}
-      </ul>
-    </div>
-  </nav>
+
+  {% section 'header' %}
 
   {% comment %}
   navbar loop
