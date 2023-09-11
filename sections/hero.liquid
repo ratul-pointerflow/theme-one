@@ -1,20 +1,14 @@
-<!--  section start -->
-<section class='_section'>
+<!-- hero section start -->
+<section class='hero_section'>
     <div class='container'>
         <div class='row'>
-            <h1>ZazBah</h1>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Omnis dignissimos ullam, adipisci earum blanditiis illo
-                consequuntur reprehenderit eum reiciendis quibusdam nostrum
-                distinctio cupiditate veritatis sit laboriosam recusandae
-                voluptatem dolores accusantium.
-            </p>
-            <a href="/">Home</a>
+            <h1>{{ section.settings.title }}</h1>
+            {{ section.settings.description }}
+            <a href="{{ section.settings.button_url }}">{{ section.settings.button_label }}</a>
         </div>
     </div>
 </section>
-<!--  section end   -->
+<!-- hero section end   -->
 
 {% schema %}
 {
