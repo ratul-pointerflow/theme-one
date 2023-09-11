@@ -309,6 +309,7 @@
   <main id="MainContent" class="content-for-layout focus-none" role="main" tabindex="-1">
     {{ content_for_layout }}
     {{ content_for_index }}
+    {% sections 'my-collection' %}
   </main>
 
   {% sections 'footer-group' %}
