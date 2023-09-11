@@ -129,18 +129,28 @@
           "color_scheme": "inverse"
         }
       },
-      "67ca26e0-9f64-493e-b906-d40dc7480314": {
+      "5afba9c3-4670-4c51-9bbe-421d4b19c76f": {
         "type": "hero",
         "settings": {
-          "title": "ZazBah",
-          "description": "<p>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa<\/p>",
-          "button_label": "shop",
-          "button_url": "shopify:\/\/collections\/back-in-stock"
+          "title": "Jazbah",
+          "description": "<p>Example Description<\/p>",
+          "button_label": "Shop",
+          "button_url": "shopify:\/\/collections"
+        }
+      },
+      "6c96a44f-2ff0-42d6-9a3c-c93009f991ee": {
+        "type": "my-collection",
+        "settings": {
+          "title": "Example Heading",
+          "description": "<p>Example Description<\/p>",
+          "button_label": "Example button",
+          "button_url": ""
         }
       }
     },
     "content_for_index": [
-      "67ca26e0-9f64-493e-b906-d40dc7480314"
+      "5afba9c3-4670-4c51-9bbe-421d4b19c76f",
+      "6c96a44f-2ff0-42d6-9a3c-c93009f991ee"
     ],
     "color_schemes": {
       "background-1": {
