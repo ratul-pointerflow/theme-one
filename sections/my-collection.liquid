@@ -2,19 +2,21 @@
 <section class="collection_section">
     <div class="container">
         <div class="row">
-            {%- for product in collections[section.settings.my_collection].products -%}
+            {%- assign collections = collections.long-sleeve.products.title -%}
+            <h2>{{ collections }}</h2>
+            {%- for product in collections[sections.settings.my_collection].products -%}
 
             {%- endfor -%}
             <div class="col-12 col-md-4">
                 <div class="card">
                     <div class="head">
                         <div class="imgbox">
-                            <img src="../assets/product.jpg" alt="">
+                            <img src="{{ product.featured_image }}" alt="">
                         </div>
                     </div>
                     <div class="body">
                         <h2>{{ product.title }}</h2>
-                        <h3>$3.4</h3>
+                        <h3>{{ product.price }}</h3>
                     </div>
                 </div>
             </div>
