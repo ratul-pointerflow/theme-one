@@ -1,20 +1,30 @@
 <!-- collection section start -->
 <section class="collection_section">
     <div class="container">
+        <h2 class="heading">{{ section.settings.title }}</h2>
         <div class="row">
             {%- for product in collections[section.settings.my_collection].products -%}
+            {% assign full_title = product.title | split: " " %}
+            {% assign sliced_title = full_title | slice: 0, 2 %}
             <div class="col-12 col-md-4">
-                <div class="card">
-                    <div class="head">
-                        <div class="imgbox">
-                            <img src="{{ product.featured_image | img_url: 'medium' }}" alt="">
+                <a href="{{ product.url }}">
+                    <div class="card">
+                        <div class="head">
+                            <div class="imgbox">
+                                <img src="{{ product.featured_image | img_url: 'large' }}" alt="">
+                            </div>
+                        </div>
+                        <div class="body">
+                            <h2>{{ sliced_title | join: " " }}</h2>
+                            <h3>
+                                {{ product.price | money}}
+                                {%- if product.compare_at_price_min > 0 -%}
+                                <span>{{product.compare_at_price_min | money_without_currency}}</span>
+                                {%- endif -%}
+                            </h3>
                         </div>
                     </div>
-                    <div class="body">
-                        <h2>{{ product.title }}</h2>
-                        <h3>{{ product.price | money}}</h3>
-                    </div>
-                </div>
+                </a>
             </div>
             {%- endfor -%}
         </div>
