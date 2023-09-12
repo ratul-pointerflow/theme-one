@@ -201,4 +201,65 @@ a:hover {
 }
 
 
+/* product page */
+
+.product_section{
+  padding: 120px 0px;
+
+}
+
+.product_section .main_img{
+  max-height: 400px;
+}
+
+.product_section .product_details{
+  padding: 0px 20px;
+}
+
+.product_section .product_details h2{ 
+  font-size: 25px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+.product_section .product_details h3{
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 20px;
+} 
+.product_section .product_details h3 span{
+  position: relative;
+  margin-right: 10px;
+}
+.product_section .product_details h3 .prev_price::before{
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translate(-10%, -50%) rotate(-10deg);
+  height: 2px;
+  width: 120%;
+  background-color: red;
+} 
+
+.product_section .product_details h3 .save_money{
+  color: red;
+}
+.product_section .product_details h3 .save_money::before{
+  content: 'Save ';
+  font-size: 14px;
+}
+.product_section .product_details .product_select, .from-control, .submit{
+  width: 100%;
+  padding: 10px;
+  border-radius: 0px;
+  border: 1px solid #000;
+  outline: none;
+  margin-bottom: 20px;
+}
+.product_section .product_details .submit{
+  background-color: #000;
+  color: #fff;
+  font-weight: bold;
+  letter-spacing: 2px;
+}
 
