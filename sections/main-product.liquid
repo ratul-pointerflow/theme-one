@@ -8,6 +8,44 @@
         <div class="imgbox">
           <img src="{{ featured_image | img_url : 'large' }}" alt="image">
         </div>
+        <div class="row py-2">
+          {%- for image in product.images -%}
+          <div class="col-2">
+            <div class="imgbox">
+              <img src="{{ image.src | img_url: 'medium' }}" alt="">
+            </div>
+          </div>
+          {%- endfor -%}
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <h2 class="heading">Product title</h2>
+        <h3 class="price">
+          <span class="prev_price">10$</span>
+          <span class="current_price">5$</span>
+          <span class="save_money">5$</span>
+        </h3>
+
+        <div class="separator"></div>
+
+        {% form 'product', product, class:"product-form", id:"addToCartForm"%}
+        <select name="id" id="productSelect" class="product_select">
+          {%- for variant in product.variants -%}
+          {%- if variant.available -%}
+          <option value="{{ variant.id }}">
+            {{ variant.title }}
+          </option>
+
+          {%- else -%}
+          <option value="{{ variant.id }}" disabled>
+            {{ variant.title }}
+          </option>
+          {%- endif -%}
+          {%- endfor -%}
+        </select>
+        <input type="number" class="from-control" name="quantity" id="Quantity" value="1" min="1">
+        <button type="submit" name="add" id="AddToCart" class="submit">Add to cart</button>
+        {% endform %}
       </div>
     </div>
   </div>
