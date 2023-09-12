@@ -128,27 +128,10 @@
         "settings": {
           "color_scheme": "inverse"
         }
-      },
-      "5afba9c3-4670-4c51-9bbe-421d4b19c76f": {
-        "type": "hero",
-        "settings": {
-          "title": "Jazbah",
-          "description": "<p>Example Description<\/p>",
-          "button_label": "Shop",
-          "button_url": "shopify:\/\/collections"
-        }
-      },
-      "6c96a44f-2ff0-42d6-9a3c-c93009f991ee": {
-        "type": "my-collection",
-        "settings": {
-          "my_collection": "tops-1",
-          "title": "Example Heading"
-        }
       }
     },
     "content_for_index": [
-      "5afba9c3-4670-4c51-9bbe-421d4b19c76f",
-      "6c96a44f-2ff0-42d6-9a3c-c93009f991ee"
+
     ],
     "color_schemes": {
       "background-1": {
