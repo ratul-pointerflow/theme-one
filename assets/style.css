@@ -159,22 +159,46 @@ a:hover {
 .collection_section{
   padding: 120px 0px;
 }
+.collection_section .heading{
+  margin-bottom: 50px;
+  text-align: center;
+  font-size: 28px;
+  font-weight: bolder;
+}
 
 .collection_section .card{
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
   border-radius: 5px;
+  margin-bottom: 20px;
+  transition: all linear 0.3s;
+}
+.collection_section .card:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
 }
 
 .collection_section .card .head .imgbox{
   height: 300px;
+  border-radius: 5px;
 }
 
 .collection_section .card .body{
   padding: 20px;
+  height: 200px;
 }
 
-.collection_section .card .body .h2{
+.collection_section .card .body h2{
   font-size: 22px;
   font-weight: bold;
+  margin-bottom: 20px;
 }
+.collection_section .card .body h3{
+  font-size: 16px;
+  font-weight: bold;
+}
+.collection_section .card .body span{
+  text-decoration: line-through;
+}
+
+
+
